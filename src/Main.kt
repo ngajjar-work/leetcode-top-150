@@ -1,8 +1,8 @@
-import array_and_string.RemoveElement
+import array_and_string.RemoveDuplicatesFromSortedArray
 
 fun main() {
 
-    val removeElementHelper = RemoveElement()
-    println(removeElementHelper.removeElement(intArrayOf(2),2))
+    val helper = RemoveDuplicatesFromSortedArray()
+    println(helper.removeDuplicates(intArrayOf(1,2,3)))
 
 }
