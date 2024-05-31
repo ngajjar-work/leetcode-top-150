@@ -1,9 +1,9 @@
-import array_and_string.RotateArray
+import array_and_string.BestTimeToBuyAndSellStock
 
 fun main() {
 
-    val helper = RotateArray()
-    println(helper.rotate(intArrayOf(1, 2, 3, 4, 5, 6, 7), 3))
+    val helper = BestTimeToBuyAndSellStock()
+    println(helper.maxProfit(intArrayOf(2, 1, 2, 1, 0, 1, 2)))
 
 
 }
