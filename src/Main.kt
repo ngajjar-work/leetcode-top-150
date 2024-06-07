@@ -1,7 +1,7 @@
-import array_and_string.JumpGame2
+import array_and_string.LengthOfLastWord
 
 fun main() {
 
-    val helper = JumpGame2()
-    println(helper.jump(intArrayOf(2, 3, 0, 1, 4)))
+    val helper = LengthOfLastWord()
+    println(helper.lengthOfLastWord("luffy is still joyboy"))
 }
