@@ -1,7 +1,7 @@
-import array_and_string.LengthOfLastWord
+import array_and_string.LongestCommonPrefix
 
 fun main() {
 
-    val helper = LengthOfLastWord()
-    println(helper.lengthOfLastWord("luffy is still joyboy"))
+    val helper = LongestCommonPrefix()
+    println(helper.longestCommonPrefix(arrayOf("flower", "flow", "flight")))
 }
