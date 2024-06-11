@@ -1,7 +1,7 @@
-import array_and_string.ReverseWordsInAString
+import two_pointer.ValidPalindrome
 
 fun main() {
 
-    val helper = ReverseWordsInAString()
-    println(helper.reverseWords(" the    sky is  blue  "))
+    val helper = ValidPalindrome()
+    println(helper.isPalindrome("0A"))
 }
