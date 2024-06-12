@@ -1,7 +1,7 @@
-import two_pointer.IsSubsequence
+import two_pointer.TwoSum2
 
 fun main() {
 
-    val helper = IsSubsequence()
-    println(helper.isSubsequence("", "ahbgdc"))
+    val helper = TwoSum2()
+    helper.validate()
 }
