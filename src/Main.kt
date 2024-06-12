@@ -1,7 +1,7 @@
-import two_pointer.ValidPalindrome
+import two_pointer.IsSubsequence
 
 fun main() {
 
-    val helper = ValidPalindrome()
-    println(helper.isPalindrome("0A"))
+    val helper = IsSubsequence()
+    println(helper.isSubsequence("", "ahbgdc"))
 }
