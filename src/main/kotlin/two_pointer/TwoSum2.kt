@@ -1,5 +1,8 @@
 package two_pointer
 
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Test
+
 /**
  * 167. Two Sum II - Input Array Is Sorted
  * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
@@ -49,17 +52,19 @@ class TwoSum2 {
 
         return IntArray(2) // Empty array to indicate no such pair exists
     }
+}
 
 
-    /**
-     * This function validates the `twoSum` function by running test cases and printing
-     * the results.
-     */
-    fun validate() {
+class TwoSum2Test {
 
-        println(twoSum(intArrayOf(1, 2, 4, 7), 9).contentToString()) // Output: [1, 3]
-        println(twoSum(intArrayOf(2, 3, 4), 6).contentToString()) // Output: [1, 2]
-        println(twoSum(intArrayOf(-1, 0), -1).contentToString()) // Output: [1, 2]
-        println(twoSum(intArrayOf(2, 7, 11, 15), 9).contentToString()) // Output: [1, 2]
+    private val twoSum2 = TwoSum2()  // Create an instance of TwoSum2 for testing
+
+    @Test
+    fun testInputs() {
+        val expected = intArrayOf(2, 4) // Expected output for this test case
+
+        // User-case 1: Test with input array {1, 2, 4, 7} and target 9
+        val output = twoSum2.twoSum(intArrayOf(1, 2, 4, 7), 9)
+        Assertions.assertEquals(expected.contentToString(), output.contentToString())
     }
 }
